@@ -1,3 +1,8 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using Factory.FactoryMethod;
+using Utilities;
 
-Console.WriteLine("Hello, World!");
+var runner = new ProgramRunnerBuilder()
+    .WithProgram(ConsoleKey.D1, new FactoryMethod())
+    .Build();
+
+runner.Run();

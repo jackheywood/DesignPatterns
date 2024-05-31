@@ -1,4 +1,4 @@
-﻿namespace ConsoleRunner;
+﻿namespace Utilities;
 
 public abstract class ConsoleProgram
 {
