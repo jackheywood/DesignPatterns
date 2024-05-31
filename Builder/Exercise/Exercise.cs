@@ -10,12 +10,14 @@ public class Exercise : ConsoleProgram
         Name = "Code Builder Exercise";
     }
 
-    public override void Run()
+    public override Task RunAsync()
     {
         var cb = new CodeBuilder("Person")
             .AddField("Name", "string")
             .AddField("Age", "int");
 
         Console.WriteLine(cb);
+
+        return Task.CompletedTask;
     }
 }

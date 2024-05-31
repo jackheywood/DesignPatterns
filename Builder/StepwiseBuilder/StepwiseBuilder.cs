@@ -11,7 +11,7 @@ public class StepwiseBuilder : ConsoleProgram
         Name = "Stepwise Builder";
     }
 
-    public override void Run()
+    public override Task RunAsync()
     {
         try
         {
@@ -26,5 +26,7 @@ public class StepwiseBuilder : ConsoleProgram
         {
             WriteLine(ex.Message);
         }
+
+        return Task.CompletedTask;
     }
 }

@@ -12,7 +12,7 @@ public class FunctionalBuilder : ConsoleProgram
         Name = "Functional Builder";
     }
 
-    public override void Run()
+    public override Task RunAsync()
     {
         var person = new PersonBuilder()
             .Called("Jack")
@@ -20,5 +20,7 @@ public class FunctionalBuilder : ConsoleProgram
             .Build();
 
         WriteLine(person);
+
+        return Task.CompletedTask;
     }
 }

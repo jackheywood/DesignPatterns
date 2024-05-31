@@ -15,4 +15,4 @@ var runner = new ProgramRunnerBuilder()
     .WithProgram(ConsoleKey.D6, new Exercise())
     .Build();
 
-runner.Run();
+await runner.RunAsync();

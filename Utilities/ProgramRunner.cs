@@ -6,7 +6,7 @@ public class ProgramRunner
 {
     public readonly Dictionary<ConsoleKey, ConsoleProgram> ConsolePrograms = new();
 
-    public void Run()
+    public async Task RunAsync()
     {
         while (true)
         {
@@ -18,7 +18,7 @@ public class ProgramRunner
                 return;
             }
 
-            program.Run();
+            await program.RunAsync();
 
             WriteLine();
         }

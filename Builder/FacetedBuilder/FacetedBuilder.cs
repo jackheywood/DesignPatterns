@@ -11,12 +11,14 @@ public class FacetedBuilder : ConsoleProgram
         Name = "Faceted Builder";
     }
 
-    public override void Run()
+    public override Task RunAsync()
     {
         Person person = new PersonBuilder()
             .Works.At("Consulting").AsA("Detective").Earning(100000)
             .Lives.At("221B Baker Street").In("London").WithPostcode("NW1 6XE");
 
         WriteLine(person);
+
+        return Task.CompletedTask;
     }
 }

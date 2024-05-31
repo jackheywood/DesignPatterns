@@ -11,7 +11,7 @@ public class Inheritance : ConsoleProgram
         Name = "Fluent Builder Inheritance";
     }
 
-    public override void Run()
+    public override Task RunAsync()
     {
         var me = Person.New
             .Called("Jack")
@@ -19,5 +19,7 @@ public class Inheritance : ConsoleProgram
             .Build();
 
         WriteLine(me);
+
+        return Task.CompletedTask;
     }
 }

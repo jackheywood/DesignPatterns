@@ -11,7 +11,7 @@ public class FluentBuilder : ConsoleProgram
         Name = "Fluent Builder";
     }
 
-    public override void Run()
+    public override Task RunAsync()
     {
         var builder = new HtmlBuilder("ul");
         builder.AddChild("li", "hello").AddChild("li", "world");
@@ -19,5 +19,7 @@ public class FluentBuilder : ConsoleProgram
 
         builder.Clear();
         WriteLine(builder);
+
+        return Task.CompletedTask;
     }
 }
