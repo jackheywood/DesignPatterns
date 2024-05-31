@@ -1,5 +1,6 @@
 ﻿using Builder.FluentInheritance;
 using Builder.SimpleFluent;
+using Builder.Stepwise;
 using static System.Console;
 
 Run();
@@ -19,6 +20,9 @@ void Run()
             case ConsoleKey.D2:
                 FluentInheritance.Run();
                 break;
+            case ConsoleKey.D3:
+                Stepwise.Run();
+                break;
             default:
                 WriteLine("Closing program...");
                 return;
@@ -34,6 +38,7 @@ ConsoleKey PromptForKey()
     WriteLine();
     WriteLine("1 - Simple Fluent Builder");
     WriteLine("2 - Fluent Builder Inheritance");
+    WriteLine("3 - Stepwise Builder");
     WriteLine("Any other key - Quit");
     WriteLine();
 
