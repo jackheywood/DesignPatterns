@@ -1,7 +1,5 @@
 # C# Design Patterns
 
-
-
 ## Creational Patterns
 
 - Deal with the creation (_construction_) of objects
@@ -10,11 +8,21 @@
 
 ### Builder
 
+#### Motivation
+
 - Some objects are simple and can be created in a single constructor call,
 other objects require a lot of ceremony to create
 - Having an object with 10 constructor arguments is not productive,
 opt for **piecewise** construction instead
 - **Builder** provides an API for constructing an object step-by-step
+
+#### Summary
+
+- A **builder** is a separate component for building an object
+- Can either give builder a constructor or return it via a static function
+- To make builder fluent, return `this`
+- Different facets of an object can be built with different builders working
+in tandem via a base class
 
 ## Structural Patterns
 
