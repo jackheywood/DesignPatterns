@@ -18,10 +18,15 @@ public class ProgramRunner
                 return;
             }
 
+            WriteLine($" - {program.Name}\n");
             await program.RunAsync();
 
             WriteLine("\nPress ENTER to quit or any other key to run again...\n");
-            if (ReadKey().Key == ConsoleKey.Enter) return;
+            if (ReadKey().Key == ConsoleKey.Enter)
+            {
+                WriteLine("Closing program...");
+                return;
+            }
             WriteLine("\n");
         }
     }
@@ -35,10 +40,6 @@ public class ProgramRunner
 
         WriteLine("Any other key - Quit\n");
 
-        var input = ReadKey();
-
-        WriteLine("\n");
-
-        return input.Key;
+        return ReadKey().Key;
     }
 }
