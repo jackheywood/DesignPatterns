@@ -11,9 +11,9 @@
 #### Motivation
 
 - Some objects are simple and can be created in a single constructor call,
-other objects require a lot of ceremony to create
+  other objects require a lot of ceremony to create
 - Having an object with 10 constructor arguments is not productive,
-opt for **piecewise** construction instead
+  opt for **piecewise** construction instead
 - **Builder** provides an API for constructing an object step-by-step
 
 #### Summary
@@ -22,7 +22,30 @@ opt for **piecewise** construction instead
 - Can either give builder a constructor or return it via a static function
 - To make builder fluent, return `this`
 - Different facets of an object can be built with different builders working
-in tandem via a base class
+  in tandem via a base class
+
+### Factory
+
+#### Motivation
+
+- Object creation logic becomes too convoluted
+- Constructor is not descriptive
+  - Name mandated by name of containing type
+  - Cannot overload with the same set of arguments with different names
+  - Can turn into "optional parameter hell"
+- **Wholesale** object creation can be outsourced to:
+  - A separate function (**Factory Method**)
+  - A separate class (**Factory**)
+- Can create hierarchy of factories with **Abstract Factory** 
+
+#### Summary
+
+- A **factory** is a component responsible solely for the wholesale
+  (not piecewise) creation of objects
+- A factory method is a static method that creates objects
+- A factory class can take care of object creation
+- A factory can be external or reside inside the object as an inner class
+- Hierarchies of factories can be used to create related objects
 
 ## Structural Patterns
 
