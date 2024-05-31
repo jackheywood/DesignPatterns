@@ -1,4 +1,4 @@
-﻿namespace Builder;
+﻿namespace Builder.SimpleFluent.Builders;
 
 public class HtmlBuilder
 {
@@ -11,10 +11,11 @@ public class HtmlBuilder
         _root.Tag = rootTag;
     }
 
-    public void AddChild(string childTag, string childText)
+    public HtmlBuilder AddChild(string childTag, string childText)
     {
         var childElement = new HtmlElement(childTag, childText);
         _root.Elements.Add(childElement);
+        return this; // Fluent interface
     }
 
     public void Clear()

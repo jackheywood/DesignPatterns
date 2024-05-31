@@ -1,6 +1,6 @@
 ﻿using System.Text;
 
-namespace Builder;
+namespace Builder.SimpleFluent;
 
 public class HtmlElement
 {
