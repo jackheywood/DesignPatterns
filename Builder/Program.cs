@@ -1,4 +1,5 @@
-﻿using Builder.Faceted;
+﻿using Builder.Exercise;
+using Builder.Faceted;
 using Builder.FluentInheritance;
 using Builder.Functional;
 using Builder.SimpleFluent;
@@ -31,6 +32,9 @@ void Run()
             case ConsoleKey.D5:
                 Faceted.Run();
                 break;
+            case ConsoleKey.D6:
+                Exercise.Run();
+                break;
             default:
                 WriteLine("Closing program...");
                 return;
@@ -49,6 +53,7 @@ ConsoleKey PromptForKey()
     WriteLine("3 - Stepwise Builder");
     WriteLine("4 - Functional Builder");
     WriteLine("5 - Faceted Builder");
+    WriteLine("6 - Code Builder Exercise");
     WriteLine("Any other key - Quit");
     WriteLine();
 
