@@ -3,13 +3,8 @@ using Utilities;
 
 namespace Builder.Exercise;
 
-public class Exercise : ConsoleProgram
+public class Exercise() : ConsoleProgram("Code Builder Exercise")
 {
-    public Exercise()
-    {
-        Name = "Code Builder Exercise";
-    }
-
     public override Task RunAsync()
     {
         var cb = new CodeBuilder("Person")

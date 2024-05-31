@@ -1,8 +1,7 @@
 ﻿namespace Utilities;
 
-public abstract class ConsoleProgram
+public abstract class ConsoleProgram(string name)
 {
-    public string Name;
-
+    public string Name = name;
     public abstract Task RunAsync();
 }

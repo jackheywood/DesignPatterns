@@ -4,13 +4,8 @@ using static System.Console;
 
 namespace Builder.FacetedBuilder;
 
-public class FacetedBuilder : ConsoleProgram
+public class FacetedBuilder() : ConsoleProgram("Faceted Builder")
 {
-    public FacetedBuilder()
-    {
-        Name = "Faceted Builder";
-    }
-
     public override Task RunAsync()
     {
         Person person = new PersonBuilder()

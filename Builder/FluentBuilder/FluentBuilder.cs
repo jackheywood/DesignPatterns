@@ -4,13 +4,8 @@ using static System.Console;
 
 namespace Builder.FluentBuilder;
 
-public class FluentBuilder : ConsoleProgram
+public class FluentBuilder() : ConsoleProgram("Fluent Builder")
 {
-    public FluentBuilder()
-    {
-        Name = "Fluent Builder";
-    }
-
     public override Task RunAsync()
     {
         var builder = new HtmlBuilder("ul");

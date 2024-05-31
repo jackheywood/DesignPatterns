@@ -5,13 +5,8 @@ using static System.Console;
 
 namespace Builder.FunctionalBuilder;
 
-public class FunctionalBuilder : ConsoleProgram
+public class FunctionalBuilder() : ConsoleProgram("Functional Builder")
 {
-    public FunctionalBuilder()
-    {
-        Name = "Functional Builder";
-    }
-
     public override Task RunAsync()
     {
         var person = new PersonBuilder()

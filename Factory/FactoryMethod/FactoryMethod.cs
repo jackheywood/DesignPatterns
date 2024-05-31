@@ -3,13 +3,8 @@ using static System.Console;
 
 namespace Factory.FactoryMethod;
 
-public class FactoryMethod : ConsoleProgram
+public class FactoryMethod() : ConsoleProgram("Factory Method")
 {
-    public FactoryMethod()
-    {
-        Name = "Factory Method";
-    }
-
     public override Task RunAsync()
     {
         var polarPoint = Point.NewPolarPoint(1.0, Math.PI / 2);

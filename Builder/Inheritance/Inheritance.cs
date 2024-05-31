@@ -4,13 +4,8 @@ namespace Builder.Inheritance;
 
 using static Console;
 
-public class Inheritance : ConsoleProgram
+public class Inheritance() : ConsoleProgram("Fluent Builder Inheritance")
 {
-    public Inheritance()
-    {
-        Name = "Fluent Builder Inheritance";
-    }
-
     public override Task RunAsync()
     {
         var me = Person.New

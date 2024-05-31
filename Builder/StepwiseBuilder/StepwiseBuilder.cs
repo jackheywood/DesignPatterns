@@ -4,13 +4,8 @@ using static System.Console;
 
 namespace Builder.StepwiseBuilder;
 
-public class StepwiseBuilder : ConsoleProgram
+public class StepwiseBuilder() : ConsoleProgram("Stepwise Builder")
 {
-    public StepwiseBuilder()
-    {
-        Name = "Stepwise Builder";
-    }
-
     public override Task RunAsync()
     {
         try

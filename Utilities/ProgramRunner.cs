@@ -20,7 +20,9 @@ public class ProgramRunner
 
             await program.RunAsync();
 
-            WriteLine();
+            WriteLine("\nPress ENTER to quit or any other key to run again...\n");
+            if (ReadKey().Key == ConsoleKey.Enter) return;
+            WriteLine("\n");
         }
     }
 
@@ -29,9 +31,7 @@ public class ProgramRunner
         WriteLine("Which program would you like to run?\n");
 
         foreach (var consoleProgram in ConsolePrograms)
-        {
             WriteLine($"{consoleProgram.Key.ToString()[1]} - {consoleProgram.Value.Name}");
-        }
 
         WriteLine("Any other key - Quit\n");
 
