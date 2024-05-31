@@ -1,11 +1,17 @@
 ﻿using Builder.Faceted.Builders;
+using ConsoleRunner;
 using static System.Console;
 
 namespace Builder.Faceted;
 
-public static class Faceted
+public class Faceted : ConsoleProgram
 {
-    public static void Run()
+    public Faceted()
+    {
+        Name = "Faceted Builder";
+    }
+
+    public override void Run()
     {
         Person person = new PersonBuilder()
             .Works.At("Consulting").AsA("Detective").Earning(100000)

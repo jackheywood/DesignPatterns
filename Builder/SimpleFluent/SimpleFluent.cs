@@ -1,11 +1,17 @@
 ﻿using Builder.SimpleFluent.Builders;
+using ConsoleRunner;
 using static System.Console;
 
 namespace Builder.SimpleFluent;
 
-public static class SimpleFluent
+public class SimpleFluent : ConsoleProgram
 {
-    public static void Run()
+    public SimpleFluent()
+    {
+        Name = "Simple Fluent Builder";
+    }
+
+    public override void Run()
     {
         var builder = new HtmlBuilder("ul");
         builder.AddChild("li", "hello").AddChild("li", "world");

@@ -1,12 +1,18 @@
 ﻿using Builder.Functional.Builders;
 using Builder.Functional.Extensions;
+using ConsoleRunner;
 using static System.Console;
 
 namespace Builder.Functional;
 
-public static class Functional
+public class Functional : ConsoleProgram
 {
-    public static void Run()
+    public Functional()
+    {
+        Name = "Functional Builder";
+    }
+
+    public override void Run()
     {
         var person = new PersonBuilder()
             .Called("Jack")

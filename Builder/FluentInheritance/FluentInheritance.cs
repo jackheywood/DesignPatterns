@@ -1,10 +1,17 @@
-﻿namespace Builder.FluentInheritance;
+﻿using ConsoleRunner;
+
+namespace Builder.FluentInheritance;
 
 using static Console;
 
-public static class FluentInheritance
+public class FluentInheritance : ConsoleProgram
 {
-    public static void Run()
+    public FluentInheritance()
+    {
+        Name = "Fluent Builder Inheritance";
+    }
+
+    public override void Run()
     {
         var me = Person.New
             .Called("Jack")

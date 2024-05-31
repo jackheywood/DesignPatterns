@@ -1,11 +1,17 @@
 ﻿using Builder.Stepwise.Builders;
+using ConsoleRunner;
 using static System.Console;
 
 namespace Builder.Stepwise;
 
-public static class Stepwise
+public class Stepwise : ConsoleProgram
 {
-    public static void Run()
+    public Stepwise()
+    {
+        Name = "Stepwise Builder";
+    }
+
+    public override void Run()
     {
         try
         {
@@ -13,7 +19,7 @@ public static class Stepwise
                 .OfType(CarType.Crossover) // ISpecifyWheelSize
                 .WithWheels(18) // IBuildCar
                 .Build();
-            
+
             WriteLine(car);
         }
         catch (ArgumentException ex)
