@@ -1,4 +1,4 @@
-﻿namespace Builder.Exercise;
+﻿namespace Builder.BuilderExercise;
 
 public class Field
 {

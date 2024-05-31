@@ -1,9 +1,9 @@
-﻿using Builder.Exercise.Builders;
+﻿using Builder.BuilderExercise.Builders;
 using Utilities;
 
-namespace Builder.Exercise;
+namespace Builder.BuilderExercise;
 
-public class Exercise() : ConsoleProgram("Code Builder Exercise")
+public class BuilderExercise() : ConsoleProgram("Code Builder Exercise")
 {
     public override Task RunAsync()
     {

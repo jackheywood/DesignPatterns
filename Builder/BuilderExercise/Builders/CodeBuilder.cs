@@ -1,6 +1,6 @@
 ﻿using System.Text;
 
-namespace Builder.Exercise.Builders;
+namespace Builder.BuilderExercise.Builders;
 
 public class CodeBuilder
 {

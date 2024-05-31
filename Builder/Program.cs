@@ -1,4 +1,4 @@
-﻿using Builder.Exercise;
+﻿using Builder.BuilderExercise;
 using Builder.FacetedBuilder;
 using Builder.FluentBuilder;
 using Builder.FunctionalBuilder;
@@ -12,7 +12,7 @@ var runner = new ProgramRunnerBuilder()
     .WithProgram(ConsoleKey.D3, new StepwiseBuilder())
     .WithProgram(ConsoleKey.D4, new FunctionalBuilder())
     .WithProgram(ConsoleKey.D5, new FacetedBuilder())
-    .WithProgram(ConsoleKey.D6, new Exercise())
+    .WithProgram(ConsoleKey.D6, new BuilderExercise())
     .Build();
 
 await runner.RunAsync();

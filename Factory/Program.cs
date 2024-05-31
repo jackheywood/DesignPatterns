@@ -2,6 +2,7 @@
 using Factory.AsyncFactoryMethod;
 using Factory.BulkReplacement;
 using Factory.FactoryClass;
+using Factory.FactoryExercise;
 using Factory.FactoryMethod;
 using Factory.InnerFactory;
 using Factory.ObjectTracking;
@@ -15,6 +16,7 @@ var runner = new ProgramRunnerBuilder()
     .WithProgram(ConsoleKey.D5, new BulkReplacement())
     .WithProgram(ConsoleKey.D6, new InnerFactory())
     .WithProgram(ConsoleKey.D7, new AbstractFactory())
+    .WithProgram(ConsoleKey.D8, new FactoryExercise())
     .Build();
 
 await runner.RunAsync();
