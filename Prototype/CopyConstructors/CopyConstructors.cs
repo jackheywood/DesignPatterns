@@ -7,16 +7,16 @@ public class CopyConstructors() : ConsoleProgram("Copy Constructors (Better)")
 {
     public override Task RunAsync()
     {
-        var jane = new Person(["Jane", "Smith"], new Address("Kentish Town Road", 123));
+        var bob = new Person(["Bob", "Jones"], new Address("Manchester Road", 26));
 
-        var john = new Person(jane);
+        var alice = new Person(bob);
         
-        john.Names[0] = "John";
-        john.Address.HouseNumber = 321;
-        john.Address.StreetName = "Holloway Road";
+        alice.Names[0] = "Alice";
+        alice.Address.HouseNumber = 77;
+        alice.Address.StreetName = "Liverpool Street";
 
-        WriteLine(jane);
-        WriteLine(john);
+        WriteLine(bob);
+        WriteLine(alice);
 
         return Task.CompletedTask;
     }

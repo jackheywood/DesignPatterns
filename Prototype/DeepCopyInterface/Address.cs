@@ -1,12 +1,11 @@
-﻿namespace Prototype.CopyConstructors;
+﻿namespace Prototype.DeepCopyInterface;
 
-public class Address(string streetName, int houseNumber)
+public class Address(string streetName, int houseNumber) : IPrototype<Address>
 {
     public int HouseNumber = houseNumber;
     public string StreetName = streetName;
 
-    public Address(Address other) : this(other.StreetName, other.HouseNumber)
-    { }
+    public Address DeepCopy() => new(StreetName, HouseNumber);
 
     public override string ToString() => $"Street Name: {StreetName}, House Number: {HouseNumber}";
 }
