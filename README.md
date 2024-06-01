@@ -47,7 +47,22 @@
 - A factory can be external or reside inside the object as an inner class
 - Hierarchies of factories can be used to create related objects
 
-## Structural Patterns
+### Prototype
+
+#### Motivation
+
+- Complicated objects (_e.g. cars_) aren't designed from scratch
+- An existing (_partially or fully constructed_) design is a **prototype**
+- We make a copy (_clone_) of the prototype and customise it
+  - Requires 'deep copy' support
+- We make the cloning convenient (_e.g. via a factory_)
+
+#### Summary
+
+- A **prototype** is a partially or fully initialised object that you copy
+  (_clone_) and make use of
+
+### Structural Patterns
 
 - Concerned with the structure (_e.g. class members_)
 - Many patterns are wrappers that mimic the underlying class' interface
