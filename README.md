@@ -59,8 +59,13 @@
 
 #### Summary
 
-- A **prototype** is a partially or fully initialised object that you copy
+- A **prototype** is a partially or fully initialized object that you copy
   (_clone_) and make use of
+- To implement a prototype, partially construct an object and store it somewhere
+- To clone the prototype
+  - Implement your own deep copy functionality; or
+  - Serialize and deserialize
+- Customize the resulting cloned instance
 
 ### Structural Patterns
 
