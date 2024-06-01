@@ -1,6 +1,6 @@
 ﻿namespace Prototype.DeepCopyInterface;
 
-public interface IPrototype<T>
+public interface IPrototype<out T>
 {
     T DeepCopy();
 }
