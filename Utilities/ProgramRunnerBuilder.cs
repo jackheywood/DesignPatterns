@@ -4,9 +4,9 @@ public class ProgramRunnerBuilder
 {
     private readonly ProgramRunner _programRunner = new();
 
-    public ProgramRunnerBuilder WithProgram(ConsoleKey key, ConsoleProgram program)
+    public ProgramRunnerBuilder WithProgram(ConsoleProgram program)
     {
-        _programRunner.ConsolePrograms.Add(key, program);
+        _programRunner.ConsolePrograms.Add(program);
         return this;
     }
 

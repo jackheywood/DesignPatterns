@@ -4,17 +4,18 @@ namespace Utilities;
 
 public class ProgramRunner
 {
-    public readonly Dictionary<ConsoleKey, ConsoleProgram> ConsolePrograms = new();
+    public readonly List<ConsoleProgram> ConsolePrograms = [];
 
     public async Task RunAsync()
     {
         while (true)
         {
-            var key = PromptForKey();
+            var index = PromptForIndex();
+            var program = ConsolePrograms.ElementAtOrDefault(index);
 
-            if (!ConsolePrograms.TryGetValue(key, out var program))
+            if (program is null)
             {
-                WriteLine("Closing program...");
+                WriteLine(" - Closing program...");
                 return;
             }
 
@@ -27,19 +28,29 @@ public class ProgramRunner
                 WriteLine("Closing program...");
                 return;
             }
+
             WriteLine("\n");
         }
     }
 
-    private ConsoleKey PromptForKey()
+    private int PromptForIndex()
     {
         WriteLine("Which program would you like to run?\n");
 
-        foreach (var consoleProgram in ConsolePrograms)
-            WriteLine($"{consoleProgram.Key.ToString()[1]} - {consoleProgram.Value.Name}");
+        for (var i = 0; i < ConsolePrograms.Count; i++)
+        {
+            WriteLine($"{i + 1} - {ConsolePrograms[i].Name}");
+        }
 
         WriteLine("Any other key - Quit\n");
 
-        return ReadKey().Key;
+        var input = ReadKey().KeyChar;
+
+        if (char.IsDigit(input))
+        {
+            return int.Parse(input.ToString()) - 1;
+        }
+
+        return -1;
     }
 }
