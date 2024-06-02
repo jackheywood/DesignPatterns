@@ -1,4 +1,5 @@
-﻿using Singleton.DependencyInjection;
+﻿using Singleton.AmbientContext;
+using Singleton.DependencyInjection;
 using Singleton.Monostate;
 using Singleton.PerThread;
 using Singleton.SimpleSingleton;
@@ -11,6 +12,7 @@ var runner = new ProgramRunnerBuilder()
     .WithProgram(new DependencyInjection())
     .WithProgram(new Monostate())
     .WithProgram(new PerThread())
+    .WithProgram(new AmbientContext())
     .Build();
 
 await runner.RunAsync();

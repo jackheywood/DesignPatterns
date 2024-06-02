@@ -4,7 +4,7 @@ public sealed class PerThreadSingleton
 {
     private static readonly ThreadLocal<PerThreadSingleton> ThreadInstance = new(() => new PerThreadSingleton());
 
-    public int Id;
+    public readonly int Id;
 
     private PerThreadSingleton()
     {
