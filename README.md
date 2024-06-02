@@ -67,7 +67,23 @@
   - Serialize and deserialize
 - Customize the resulting cloned instance
 
-### Structural Patterns
+### Singleton
+
+#### Motivation
+
+- For some components it only makes sense to have one in the system:
+  - Database repository
+  - Object factory
+- E.g. the constructor call is expensive
+  - We only do it once
+  - We provide everyone with the same instance
+- Want to prevent anyone creating additional copies
+- Need to take care of lazy instantiation and thread safety
+
+#### Summary
+- A **singleton** is a component which is only instantiated once
+
+## Structural Patterns
 
 - Concerned with the structure (_e.g. class members_)
 - Many patterns are wrappers that mimic the underlying class' interface
