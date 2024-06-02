@@ -19,9 +19,13 @@
         <None Update="TestabilityIssues\Capitals.txt">
             <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
         </None>
+        <None Update="DependencyInjection\Capitals.txt">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
     </ItemGroup>
 
     <ItemGroup>
+        <PackageReference Include="Autofac" Version="8.0.0" />
         <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.10.0"/>
         <PackageReference Include="morelinq" Version="4.2.0"/>
         <PackageReference Include="xunit" Version="2.8.1"/>

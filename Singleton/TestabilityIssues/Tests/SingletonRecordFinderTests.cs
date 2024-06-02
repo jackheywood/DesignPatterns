@@ -4,8 +4,8 @@ namespace Singleton.TestabilityIssues.Tests;
 
 public class SingletonRecordFinderTests
 {
-    // Dependent on the live database as SingletonRecordFinder has a hard-coded reference to the database
-    // Can't replace with a test instance
+    // Dependent on the live data, as SingletonRecordFinder has a hard-coded reference to the database
+    // Can't replace with a test instance!
     [Fact]
     public void GetTotalPopulation_GetsTotalPopulation()
     {
