@@ -2,11 +2,17 @@
 
 ## Creational Patterns
 
-- Deal with the creation (_construction_) of objects
+Provide various object creation (_construction_) mechanisms, which
+increase flexibility and reuse of existing code
+
 - Explicit (_constructor_) vs. implicit (_DI, reflection, etc._)
 - Wholesale (_single statement_) vs. piecewise (_step-by-step_)
 
 ### Builder
+
+**Builder** lets you construct complex objects step by step. The pattern
+allows you to produce different types and representations of an object
+using the same construction code.
 
 #### Motivation
 
@@ -26,6 +32,12 @@
 
 ### Factory
 
+**Factory Method** provides an interface for creating objects in a superclass,
+but allows subclasses to alter the type of objects that will be created.
+
+**Abstract Factory** lets you produce families of related objects without
+specifying their concrete classes.
+
 #### Motivation
 
 - Object creation logic becomes too convoluted
@@ -33,7 +45,7 @@
   - Name mandated by name of containing type
   - Cannot overload with the same set of arguments with different names
   - Can turn into "optional parameter hell"
-- **Wholesale** object creation can be outsourced to:
+- Wholesale object creation can be outsourced to:
   - A separate function (**Factory Method**)
   - A separate class (**Factory**)
 - Can create hierarchy of factories with **Abstract Factory** 
@@ -48,6 +60,9 @@
 - Hierarchies of factories can be used to create related objects
 
 ### Prototype
+
+**Prototype** lets you copy existing objects without making your code
+dependent on their classes.
 
 #### Motivation
 
@@ -69,6 +84,9 @@
 
 ### Singleton
 
+**Singleton** lets you ensure that a class has only one instance, while
+providing a global access point to this instance.
+
 #### Motivation
 
 - For some components it only makes sense to have one in the system:
@@ -82,14 +100,24 @@
 
 #### Summary
 - A **singleton** is a component which is only instantiated once
+- Making a "safe" singleton is easy: construct a static `Lazy<T>` and
+  return its `Value`
+- Singletons are difficult to test
+- Instead of directly using a singleton, consider depending on an
+  abstraction (_e.g. an interface_)
+- Consider defining singleton lifetime in a DI container
 
 ## Structural Patterns
+Explain how to assemble objects and classes into larger structures,
+while keeping these structures flexible and efficient
 
-- Concerned with the structure (_e.g. class members_)
 - Many patterns are wrappers that mimic the underlying class' interface
 - Stress the importance of good API design
 
 ## Behavioural Patterns
+
+Concerned with algorithms and the assignment of responsibilities
+between objects
 
 - All different; no central theme
 - Unique in their approach to solving specific problems
