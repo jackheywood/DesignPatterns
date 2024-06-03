@@ -9,7 +9,7 @@ public class LineToPointAdapter : Collection<Point>
 
     public LineToPointAdapter(Line line)
     {
-        WriteLine($"\n{++_count}: Generating points for line {line.Start} to {line.End}");
+        WriteLine($"{++_count}: Generating points for line {line.Start} to {line.End}");
 
         var left = Math.Min(line.Start.X, line.End.X);
         var right = Math.Max(line.Start.X, line.End.X);

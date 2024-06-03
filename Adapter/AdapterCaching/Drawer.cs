@@ -1,7 +1,7 @@
 ﻿using MoreLinq;
 using static System.Console;
 
-namespace Adapter.SimpleAdapter;
+namespace Adapter.AdapterCaching;
 
 public static class Drawer
 {
