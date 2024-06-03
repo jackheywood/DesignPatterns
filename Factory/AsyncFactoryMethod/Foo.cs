@@ -3,7 +3,7 @@
 public class Foo
 {
     private readonly string _syncField;
-    private string? _asyncField;
+    private string _asyncField;
 
     private Foo(string syncField)
     {
