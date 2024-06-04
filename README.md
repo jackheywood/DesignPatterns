@@ -131,6 +131,45 @@ while keeping these structures flexible and efficient
 - Create a component which aggregates (_has a reference to..._) the adaptee
 - Intermediate representations can pile up: use caching and other optimizations
 
+### Bridge
+
+**Bridge** lets you split a large class or a set of closely related classes
+into two separate hierarchies — abstraction and implementation — which can be
+developed independently of each other.
+
+#### Motivation
+
+- Bridge prevents a 'Cartesian product' complexity explosion
+- Example:
+  - Base class `ThreadScheduler`
+  - Can be preemptive or cooperative
+  - Can run on Windows or Unix
+  - End up with a 2x2 scenario: `WindowsPTS`, `UnixPTS`, `WindowsCTS`, `UnixCTS`
+- Bridge pattern avoids the entity explosion
+
+Before:
+```mermaid
+classDiagram
+    ThreadScheduler <|-- PreemptiveThreadScheduler
+    ThreadScheduler <|-- CooperativeThreadScheduler
+    PreemptiveThreadScheduler <|-- WindowsPTS
+    PreemptiveThreadScheduler <|-- UnixPTS
+    CooperativeThreadScheduler <|-- UnixCTS
+    CooperativeThreadScheduler <|-- WindowsCTS
+```
+
+After:
+```mermaid
+classDiagram
+    ThreadScheduler <|-- PreemptiveThreadScheduler
+    ThreadScheduler <|-- CooperativeThreadScheduler
+    ThreadScheduler --> IPlatformScheduler
+    IPlatformScheduler <|-- UnixScheduler
+    IPlatformScheduler <|-- WindowsScheduler
+    ThreadScheduler : -platformScheduler
+```
+
+
 ## Behavioural Patterns
 
 Concerned with algorithms and the assignment of responsibilities
