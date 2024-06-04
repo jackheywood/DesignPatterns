@@ -114,6 +114,23 @@ while keeping these structures flexible and efficient
 - Many patterns are wrappers that mimic the underlying class' interface
 - Stress the importance of good API design
 
+### Adapter
+
+**Adapter** allows objects with incompatible interfaces to collaborate.
+
+#### Motivation
+
+- We cannot modify our gadgets to support every possible interface
+- We use an adapter to give us the interface we require from the
+  interface we have.
+
+#### Summary
+
+- Implementing an **adapter** is easy
+- Determine the API you have and the API you need
+- Create a component which aggregates (_has a reference to..._) the adaptee
+- Intermediate representations can pile up: use caching and other optimizations
+
 ## Behavioural Patterns
 
 Concerned with algorithms and the assignment of responsibilities
