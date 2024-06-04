@@ -175,6 +175,22 @@ classDiagram
 - Both can exist as hierarchies
 - A stronger form of encapsulation
 
+### Composite
+
+**Composite** lets you compose objects into tree structures and then work
+with these structures as if they were individual objects.
+
+#### Motivation
+
+- Objects use other objects' fields/properties/members through inheritance
+  and composition
+- Composition lets us make compound objects
+  - E.g. a mathematical expression composed of simple expressions; or
+  - A grouping of shapes that consists of several shapes
+- The composite design pattern is used to treat both single (_scalar_) and
+  and composite objects uniformly
+  - i.e. `Foo` and `Collection<Foo>` have common APIs
+
 ## Behavioural Patterns
 
 Concerned with algorithms and the assignment of responsibilities
