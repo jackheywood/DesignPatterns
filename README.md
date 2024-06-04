@@ -163,7 +163,7 @@ After:
 classDiagram
     ThreadScheduler <|-- PreemptiveThreadScheduler
     ThreadScheduler <|-- CooperativeThreadScheduler
-    ThreadScheduler --> IPlatformScheduler
+    IPlatformScheduler <--o ThreadScheduler
     IPlatformScheduler <|-- UnixScheduler
     IPlatformScheduler <|-- WindowsScheduler
     ThreadScheduler : -platformScheduler
