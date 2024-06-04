@@ -1,3 +1,8 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using Composite.GeometricShapes;
+using Utilities;
 
-Console.WriteLine("Hello, World!");
+var runner = new ProgramRunnerBuilder()
+    .WithProgram(new GeometricShapes())
+    .Build();
+
+await runner.RunAsync();
