@@ -124,6 +124,13 @@ while keeping these structures flexible and efficient
 - We use an adapter to give us the interface we require from the
   interface we have.
 
+#### Summary
+
+- Implementing an **adapter** is easy
+- Determine the API you have and the API you need
+- Create a component which aggregates (_has a reference to..._) the adaptee
+- Intermediate representations can pile up: use caching and other optimizations
+
 ## Behavioural Patterns
 
 Concerned with algorithms and the assignment of responsibilities
