@@ -1,4 +1,5 @@
 ﻿using Utilities;
+using static System.Console;
 
 namespace Composite.NeuralNetworks;
 
@@ -16,6 +17,9 @@ public class NeuralNetworks() : ConsoleProgram("Composite in Neural Networks")
 
         neuron1.ConnectTo(layer1);
         layer1.ConnectTo(layer2);
+
+        WriteLine(layer1);
+        WriteLine(layer2);
 
         return Task.CompletedTask;
     }
