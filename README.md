@@ -187,9 +187,18 @@ with these structures as if they were individual objects.
 - Composition lets us make compound objects
   - E.g. a mathematical expression composed of simple expressions; or
   - A grouping of shapes that consists of several shapes
-- The composite design pattern is used to treat both single (_scalar_) and
+- The composite design pattern is used to treat both single (_scalar_)
   and composite objects uniformly
   - i.e. `Foo` and `Collection<Foo>` have common APIs
+
+#### Summary
+
+- Objects can use other objects via inheritance/composition
+- Some composed and singular objects need similar/identical behaviours
+- The **composite** design pattern lets us treat both types of objects
+  uniformly
+- C# has special support for the _enumeration_ concept
+- A single object can masquerade as a collection with `yield return this;`
 
 ## Behavioural Patterns
 
