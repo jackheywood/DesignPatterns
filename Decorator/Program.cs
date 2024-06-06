@@ -1,6 +1,7 @@
 ﻿using Decorator.AdapterDecorator;
 using Decorator.CustomStringBuilder;
 using Decorator.DecoratorCycles;
+using Decorator.DecoratorExercise;
 using Decorator.DefaultInterfaceMembers;
 using Decorator.DependencyInjection;
 using Decorator.DynamicDecorator;
@@ -17,6 +18,7 @@ var runner = new ProgramRunnerBuilder()
     .WithProgram(new DecoratorCycles())
     .WithProgram(new StaticDecorator())
     .WithProgram(new DependencyInjection())
+    .WithProgram(new DecoratorExercise())
     .Build();
 
 await runner.RunAsync();
