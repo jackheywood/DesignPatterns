@@ -11,8 +11,7 @@ public class HtmlElement
     public string Tag;
 
     public HtmlElement()
-    {
-    }
+    { }
 
     public HtmlElement(string tag, string text)
     {

@@ -1,5 +1,4 @@
 ﻿using System.Collections.ObjectModel;
-using static System.Console;
 
 namespace Adapter.SimpleAdapter;
 

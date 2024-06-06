@@ -1,5 +1,4 @@
 ﻿using Utilities;
-using static System.Console;
 
 namespace Composite.CompositeExercise;
 
@@ -11,7 +10,7 @@ public class CompositeExercise() : ConsoleProgram("Composite Exercise")
         var manyValues = new ManyValues { 22, 37, -3 };
 
         List<IValueContainer> containers = [singleValue, manyValues];
-        
+
         WriteLine(singleValue);
         WriteLine(manyValues);
         WriteLine($"Sum: {containers.Sum()}");

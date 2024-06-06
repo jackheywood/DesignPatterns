@@ -1,6 +1,5 @@
 ﻿using Builder.FluentBuilder.Builders;
 using Utilities;
-using static System.Console;
 
 namespace Builder.FluentBuilder;
 

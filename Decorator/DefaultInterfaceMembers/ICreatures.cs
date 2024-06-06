@@ -1,6 +1,4 @@
-﻿using static System.Console;
-
-namespace Decorator.DefaultInterfaceMembers;
+﻿namespace Decorator.DefaultInterfaceMembers;
 
 public interface ICreature
 {

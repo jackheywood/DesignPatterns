@@ -1,5 +1,4 @@
 ﻿using MoreLinq;
-using static System.Console;
 
 namespace Singleton.SimpleSingleton;
 

@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using static System.Console;
 
 namespace Adapter.AdapterCaching;
 

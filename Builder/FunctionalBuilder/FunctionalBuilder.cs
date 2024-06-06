@@ -1,7 +1,6 @@
 ﻿using Builder.FunctionalBuilder.Builders;
 using Builder.FunctionalBuilder.Extensions;
 using Utilities;
-using static System.Console;
 
 namespace Builder.FunctionalBuilder;
 

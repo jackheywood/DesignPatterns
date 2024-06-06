@@ -1,6 +1,5 @@
 ﻿using Autofac;
 using Utilities;
-using static System.Console;
 
 namespace Singleton.DependencyInjection;
 
@@ -18,7 +17,7 @@ public class DependencyInjection() : ConsoleProgram("Singleton in Dependency Inj
             var totalPopulation = recordFinder.GetTotalPopulation(["Hong Kong", "Bangkok"]);
             WriteLine($"Total population of Hong Kong & Bangkok: {totalPopulation}");
         }
-        
+
         return Task.CompletedTask;
     }
 }

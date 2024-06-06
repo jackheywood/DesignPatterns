@@ -1,6 +1,4 @@
-﻿using static System.Console;
-
-namespace Adapter.DependencyInjection;
+﻿namespace Adapter.DependencyInjection;
 
 public interface ICommand
 {

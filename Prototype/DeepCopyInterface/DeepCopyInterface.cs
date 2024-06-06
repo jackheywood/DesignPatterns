@@ -1,5 +1,4 @@
 ﻿using Utilities;
-using static System.Console;
 
 namespace Prototype.DeepCopyInterface;
 
@@ -13,7 +12,7 @@ public class DeepCopyInterface() : ConsoleProgram("Deep Copy Interface")
 
         jack.Names[0] = "Jack";
         jack.Address.StreetName = "London Street";
-        
+
         WriteLine(will);
         WriteLine(jack);
 

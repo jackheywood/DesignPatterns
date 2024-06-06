@@ -1,5 +1,4 @@
 ﻿using Factory.AbstractFactory.Factories;
-using static System.Console;
 
 namespace Factory.AbstractFactory;
 

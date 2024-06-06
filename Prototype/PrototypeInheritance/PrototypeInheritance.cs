@@ -1,6 +1,5 @@
 ﻿using Prototype.PrototypeInheritance.Extensions;
 using Utilities;
-using static System.Console;
 
 namespace Prototype.PrototypeInheritance;
 

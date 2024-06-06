@@ -1,6 +1,4 @@
-﻿using static System.Console;
-
-namespace Decorator.MultipleInheritanceInterfaces;
+﻿namespace Decorator.MultipleInheritanceInterfaces;
 
 public class Bird : IBird
 {

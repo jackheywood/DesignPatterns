@@ -1,6 +1,5 @@
 ﻿using Factory.FactoryClass.Factories;
 using Utilities;
-using static System.Console;
 
 namespace Factory.FactoryClass;
 

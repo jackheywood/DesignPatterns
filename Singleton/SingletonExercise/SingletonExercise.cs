@@ -1,5 +1,4 @@
 ﻿using Utilities;
-using static System.Console;
 
 namespace Singleton.SingletonExercise;
 

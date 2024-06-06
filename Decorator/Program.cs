@@ -4,6 +4,7 @@ using Decorator.DecoratorCycles;
 using Decorator.DefaultInterfaceMembers;
 using Decorator.DynamicDecorator;
 using Decorator.MultipleInheritanceInterfaces;
+using Decorator.StaticDecorator;
 using Utilities;
 
 var runner = new ProgramRunnerBuilder()
@@ -13,6 +14,7 @@ var runner = new ProgramRunnerBuilder()
     .WithProgram(new DefaultInterfaceMembers())
     .WithProgram(new DynamicDecorator())
     .WithProgram(new DecoratorCycles())
+    .WithProgram(new StaticDecorator())
     .Build();
 
 await runner.RunAsync();

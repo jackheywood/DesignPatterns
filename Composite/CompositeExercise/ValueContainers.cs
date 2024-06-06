@@ -20,5 +20,5 @@ public class SingleValue : IValueContainer
 
 public class ManyValues : List<int>, IValueContainer
 {
-    public override string ToString() => $"Many values: {string.Join(", " ,this)}";
+    public override string ToString() => $"Many values: {string.Join(", ", this)}";
 }

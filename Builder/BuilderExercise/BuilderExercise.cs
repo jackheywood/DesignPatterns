@@ -11,7 +11,7 @@ public class BuilderExercise() : ConsoleProgram("Code Builder Exercise")
             .AddField("Name", "string")
             .AddField("Age", "int");
 
-        Console.WriteLine(cb);
+        WriteLine(cb);
 
         return Task.CompletedTask;
     }
