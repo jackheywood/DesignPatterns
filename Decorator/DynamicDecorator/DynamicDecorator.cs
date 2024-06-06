@@ -18,7 +18,7 @@ public class DynamicDecorator() : ConsoleProgram("Dynamic Decorator Composition"
         foreach (var shape in shapes) WriteLine(shape.AsString());
 
         // Nothing stopping us from nesting the same decorator!
-        // Could keep track of which types have been applied to avoid this being possible.
+        // Could keep track of which types have been applied to avoid this being possible - See DecoratorCycles
         var sillyShape = new TransparentShape(new TransparentShape(new Circle(1.5f), 0.25f), 0.125f);
         WriteLine(sillyShape.AsString());
 
