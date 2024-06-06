@@ -10,10 +10,10 @@ public class BulkReplacement() : ConsoleProgram("Bulk Replacement")
         var factory = new ReplaceableThemeFactory();
 
         var magicTheme = factory.CreateTheme(true);
-        Console.WriteLine(magicTheme.Value);
+        WriteLine(magicTheme.Value);
 
         factory.ReplaceTheme(false);
-        Console.WriteLine(magicTheme.Value);
+        WriteLine(magicTheme.Value);
 
         return Task.CompletedTask;
     }

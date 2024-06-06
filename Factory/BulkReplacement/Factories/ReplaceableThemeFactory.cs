@@ -15,8 +15,12 @@ public class ReplaceableThemeFactory
     public void ReplaceTheme(bool dark)
     {
         foreach (var theme in _themes)
+        {
             if (theme.TryGetTarget(out var reference))
+            {
                 reference.Value = CreateThemeImpl(dark);
+            }
+        }
     }
 
     private static ITheme CreateThemeImpl(bool dark) => dark ? new DarkTheme() : new LightTheme();

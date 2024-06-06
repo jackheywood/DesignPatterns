@@ -18,7 +18,7 @@ public class DarkTheme : ITheme
 {
     public string TextColour => "white";
     public string BackgroundColour => "dark gray";
-    
+
     public override string ToString() => this.ToFormattedString();
 }
 

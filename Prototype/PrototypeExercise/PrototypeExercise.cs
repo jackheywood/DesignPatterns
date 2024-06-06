@@ -1,5 +1,4 @@
 ﻿using Utilities;
-using static System.Console;
 
 namespace Prototype.PrototypeExercise;
 
@@ -15,7 +14,7 @@ public class PrototypeExercise() : ConsoleProgram("Prototype Exercise")
 
         var line2 = line1.DeepCopy();
         line1.Start.X = line1.End.X = line1.Start.Y = line1.End.Y = 0;
-        
+
         WriteLine(line1);
         WriteLine(line2);
 

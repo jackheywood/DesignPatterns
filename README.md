@@ -200,6 +200,32 @@ with these structures as if they were individual objects.
 - C# has special support for the _enumeration_ concept
 - A single object can masquerade as a collection with `yield return this;`
 
+### Decorator
+
+**Decorator** lets you attach new behaviors to objects by placing these 
+objects inside special wrapper objects that contain the behaviour.
+
+#### Motivation
+
+- Want to augment an object with additional functionality
+- Do not want to rewrite or alter existing code (_Open-Closed Principle_)
+- Want to keep new functionality separate (_Single Responsibility Principle_)
+- Need to be able to interact with existing structures
+- Two options:
+  - Inherit from required object if possible; some objects are sealed
+  - Build a **decorator** which simply references the decorated object(s)
+
+#### Summary
+
+- **Decorator** facilitates the addition of behaviours to individual objects
+  without inheriting from them.
+- Keeps the reference to the decorated object(s)
+- May or may not proxy over calls
+  - Can use ReSharper or Rider to generate delegated members
+- Exists in a _static_ variation
+  - `X<Y<Foo>>`
+  - Very limited due to inability to inherit from type parameters in C#
+
 ## Behavioural Patterns
 
 Concerned with algorithms and the assignment of responsibilities

@@ -1,6 +1,5 @@
 ﻿using Builder.FacetedBuilder.Builders;
 using Utilities;
-using static System.Console;
 
 namespace Builder.FacetedBuilder;
 

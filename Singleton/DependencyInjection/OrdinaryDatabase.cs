@@ -1,5 +1,4 @@
 ﻿using MoreLinq;
-using static System.Console;
 
 namespace Singleton.DependencyInjection;
 
@@ -13,7 +12,7 @@ public class OrdinaryDatabase : IDatabase
     public OrdinaryDatabase()
     {
         WriteLine("Initializing database...");
-        
+
         _capitals = File.ReadAllLines(DatabaseFilePath)
             .Batch(2)
             .ToDictionary(
