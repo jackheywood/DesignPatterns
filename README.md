@@ -219,6 +219,12 @@ objects inside special wrapper objects that contain the behaviour.
 
 - **Decorator** facilitates the addition of behaviours to individual objects
   without inheriting from them.
+- Keeps the reference to the decorated object(s)
+- May or may not proxy over calls
+  - Can use ReSharper or Rider to generate delegated members
+- Exists in a _static_ variation
+  - `X<Y<Foo>>`
+  - Very limited due to inability to inherit from type parameters in C#
 
 ## Behavioural Patterns
 
