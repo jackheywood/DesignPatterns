@@ -1,5 +1,18 @@
 # C# Design Patterns
 
+* [Creational Patterns](#creational-patterns)
+  * [Builder](#builder)
+  * [Factory](#factory)
+  * [Prototype](#prototype)
+  * [Singleton](#singleton)
+* [Structural Patterns](#structural-patterns)
+  * [Adapter](#adapter)
+  * [Bridge](#bridge)
+  * [Composite](#composite)
+  * [Decorator](#decorator)
+  * [Facade](#facade)
+* [Behavioural Patterns](#behavioural-patterns)
+
 ## Creational Patterns
 
 Provide various object creation (_construction_) mechanisms, which
@@ -225,6 +238,22 @@ objects inside special wrapper objects that contain the behaviour.
 - Exists in a _static_ variation
   - `X<Y<Foo>>`
   - Very limited due to inability to inherit from type parameters in C#
+
+### Facade
+
+**Facade** provides a simplified interface to a library, a framework, or any other
+complex set of classes.
+
+#### Motivation
+
+- Balancing complexity and presentation/usability
+- Typical home:
+  - Many subsystems (electrical, sanitation)
+  - Complex internal structure (e.g. floor layers)
+  - End user is not exposed to the internals
+- Same with software!
+  - Many systems working to provide flexibility, but...
+  - API consumers want it to "just work"
 
 ## Behavioural Patterns
 
