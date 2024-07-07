@@ -231,7 +231,7 @@ objects inside special wrapper objects that contain the behaviour.
 #### Summary
 
 - **Decorator** facilitates the addition of behaviours to individual objects
-  without inheriting from them.
+  without inheriting from them
 - Keeps the reference to the decorated object(s)
 - May or may not proxy over calls
   - Can use ReSharper or Rider to generate delegated members
@@ -254,6 +254,12 @@ complex set of classes.
 - Same with software!
   - Many systems working to provide flexibility, but...
   - API consumers want it to "just work"
+
+#### Summary
+
+- **Facade** provides a simplified API over a set of classes/subsystems
+- May wish to (optionally) expose internals through the facade for power users
+- May allow users to "escalate" to use more complex APIs if they need to
 
 ## Behavioural Patterns
 
