@@ -4,7 +4,7 @@
         <OutputType>Exe</OutputType>
         <TargetFramework>net8.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
-        <Nullable>disable</Nullable>
+        <Nullable>enable</Nullable>
         <GenerateProgramFile>false</GenerateProgramFile>
     </PropertyGroup>
 
@@ -13,21 +13,8 @@
     </ItemGroup>
 
     <ItemGroup>
-        <None Update="SimpleSingleton\Capitals.txt">
-            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-        </None>
-        <None Update="TestabilityIssues\Capitals.txt">
-            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-        </None>
-        <None Update="DependencyInjection\Capitals.txt">
-            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-        </None>
-    </ItemGroup>
-
-    <ItemGroup>
-        <PackageReference Include="Autofac" Version="8.0.0"/>
+        <PackageReference Include="JetBrains.dotMemoryUnit" Version="3.2.20220510"/>
         <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.10.0"/>
-        <PackageReference Include="morelinq" Version="4.2.0"/>
         <PackageReference Include="xunit" Version="2.9.0"/>
         <PackageReference Include="xunit.runner.visualstudio" Version="2.8.2">
             <PrivateAssets>all</PrivateAssets>

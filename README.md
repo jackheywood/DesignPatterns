@@ -11,6 +11,7 @@
   * [Composite](#composite)
   * [Decorator](#decorator)
   * [Facade](#facade)
+  * [Flyweight](#flyweight)
 * [Behavioural Patterns](#behavioural-patterns)
 
 ## Creational Patterns
@@ -260,6 +261,32 @@ complex set of classes.
 - **Facade** provides a simplified API over a set of classes/subsystems
 - May wish to (optionally) expose internals through the facade for power users
 - May allow users to "escalate" to use more complex APIs if they need to
+
+### Flyweight
+
+**Flyweight** lets you fit more objects into the available amount of RAM by
+sharing common parts of state between multiple objects instead of keeping all 
+the data in each object.
+
+#### Motivation
+
+- Avoid redundancy when storing data
+- Examples:
+  - .NET performs string interning, so an identical string is stored only once
+  - MMORPG:
+    - Plenty of users with identical first/last names
+    - No sense in storing the same first/last name over and over again
+    - Store a list of names and have pointers to them instead
+  - Bold or italic text in the console
+    - Don't want each character to have a formatting character
+    - Operate on _ranges_ (e.g. line number, start/end positions)
+
+#### Summary
+
+- Store common data externally
+- Define the idea of "ranges" on homogeneous collections and store data related
+  to those ranges
+- .NET string interning _is_ the Flyweight pattern!
 
 ## Behavioural Patterns
 

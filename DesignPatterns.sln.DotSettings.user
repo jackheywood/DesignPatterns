@@ -1,4 +1,11 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=dece2de0_002Dd782_002D438f_002D915a_002D6cdee1b56e67/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="SingletonTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
-  &lt;Project Location="D:\Training\C#\DesignPatterns\Singleton" Presentation="&amp;lt;Creational&amp;gt;\&amp;lt;Singleton&amp;gt;" /&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=23b26c9b_002D865f_002D4150_002Db6ac_002D9f795066acae/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="MemoryTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::2DEA2D84-4E26-4957-99BC-6558FAF5ACD9::net8.0::Flyweight.RepeatedUserNames.MemoryTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=dece2de0_002Dd782_002D438f_002D915a_002D6cdee1b56e67/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="SingletonTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::2DEA2D84-4E26-4957-99BC-6558FAF5ACD9::net8.0::Flyweight.RepeatedUserNames.MemoryTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
