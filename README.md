@@ -11,6 +11,7 @@
   * [Composite](#composite)
   * [Decorator](#decorator)
   * [Facade](#facade)
+  * [Flyweight](#flyweight)
 * [Behavioural Patterns](#behavioural-patterns)
 
 ## Creational Patterns
@@ -279,6 +280,13 @@ the data in each object.
   - Bold or italic text in the console
     - Don't want each character to have a formatting character
     - Operate on _ranges_ (e.g. line number, start/end positions)
+
+#### Summary
+
+- Store common data externally
+- Define the idea of "ranges" on homogeneous collections and store data related
+  to those ranges
+- .NET string interning _is_ the Flyweight pattern!
 
 ## Behavioural Patterns
 
