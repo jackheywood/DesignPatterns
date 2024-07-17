@@ -12,6 +12,7 @@
   * [Decorator](#decorator)
   * [Facade](#facade)
   * [Flyweight](#flyweight)
+  * [Proxy](#proxy)
 * [Behavioural Patterns](#behavioural-patterns)
 
 ## Creational Patterns
@@ -287,6 +288,30 @@ the data in each object.
 - Define the idea of "ranges" on homogeneous collections and store data related
   to those ranges
 - .NET string interning _is_ the Flyweight pattern!
+
+### Proxy
+
+**Proxy** lets you provide a substitute or placeholder for another object.
+A proxy controls access to the original object, allowing you to perform something
+either before or after the request gets through to the original object.
+
+#### Motivation
+
+- Suppose you are calling `foo.Bar()`
+  - This assumes that `foo` is in the same process as `Bar()`
+  - What if, later on, you want to put all `foo`-related operations into a
+    separate process?
+  - Can you avoid changing your code?
+- Proxy to the rescue!
+- Same interface, entirely different behaviour
+- This is called a _communication proxy_
+  - Other types: _logging_, _virtual_, _guarding_, ...
+
+#### Summary
+
+- A **proxy** is a class that functions as an interface to a particular resource.
+- That resource may be remote, expensive to construct, or may require logging
+  or some other added functionality.
 
 ## Behavioural Patterns
 
