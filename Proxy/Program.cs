@@ -3,6 +3,7 @@ using Proxy.CompositeProxy.SoAAoS;
 using Proxy.DynamicProxy;
 using Proxy.PropertyProxy;
 using Proxy.ProtectionProxy;
+using Proxy.ProxyExercise;
 using Proxy.ValueProxy;
 using Proxy.ViewModel;
 using Utilities;
@@ -15,6 +16,7 @@ var runner = new ProgramRunnerBuilder()
     .WithProgram(new CompositeProxyArrayBacked())
     .WithProgram(new DynamicProxy())
     .WithProgram(new ViewModel())
+    .WithProgram(new ProxyExercise())
     .Build();
 
 await runner.RunAsync();
