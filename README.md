@@ -307,11 +307,18 @@ either before or after the request gets through to the original object.
 - This is called a _communication proxy_
   - Other types: _logging_, _virtual_, _guarding_, ...
 
+#### Proxy vs. Decorator
+
+- Proxy provides an identical interface; decorator provides an enhanced interface
+- Decorator typically aggregates (_or has reference to_) what it is decorating;
+  proxy doesn't have to
+- Proxy might not even be working with a materialized object
+
 #### Summary
 
-- A **proxy** is a class that functions as an interface to a particular resource.
+- A **proxy** is a class that functions as an interface to a particular resource
 - That resource may be remote, expensive to construct, or may require logging
-  or some other added functionality.
+  or some other added functionality
 
 ## Behavioural Patterns
 
