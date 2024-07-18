@@ -317,8 +317,13 @@ either before or after the request gets through to the original object.
 #### Summary
 
 - A **proxy** is a class that functions as an interface to a particular resource
-- That resource may be remote, expensive to construct, or may require logging
-  or some other added functionality
+- That resource may be remote, expensive to construct, or may require logging or
+  some other added functionality
+- A proxy has the same interface as the underlying object
+- To create a proxy, simply replicate the existing interface of an object
+- Add relevant functionality to the redefined member functions
+- Different proxies (_communication, logging, caching, etc._) have completely
+  different behaviours
 
 ## Behavioural Patterns
 
