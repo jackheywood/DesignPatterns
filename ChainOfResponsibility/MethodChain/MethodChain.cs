@@ -3,6 +3,7 @@ using Utilities;
 
 namespace ChainOfResponsibility.MethodChain;
 
+// Not a great implementation...
 public class MethodChain() : ConsoleProgram("Method Chain")
 {
     public override Task RunAsync()
@@ -12,12 +13,12 @@ public class MethodChain() : ConsoleProgram("Method Chain")
         WriteLine(goblin);
 
         var root = new CreatureModifier(goblin);
-        
+
         root.Add(new DoubleAttackModifier(goblin));
         root.Add(new IncreaseDefenceModifier(goblin, 3));
         root.Add(new NoBonusesModifier(goblin));
         root.Add(new DoubleAttackModifier(goblin));
-        
+
         root.Handle();
 
         WriteLine(goblin);

@@ -3,6 +3,8 @@
 public class Creature(string name, int attack, int defence)
 {
     public readonly string Name = name;
+
+    // Exposing these to be modified, not great
     public int Attack = attack;
     public int Defence = defence;
 
