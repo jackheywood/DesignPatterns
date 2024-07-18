@@ -1,4 +1,5 @@
-﻿using Proxy.CompositeProxy.ArrayBacked;
+﻿using Proxy.BitFragging;
+using Proxy.CompositeProxy.ArrayBacked;
 using Proxy.CompositeProxy.SoAAoS;
 using Proxy.DynamicProxy;
 using Proxy.PropertyProxy;
@@ -16,6 +17,7 @@ var runner = new ProgramRunnerBuilder()
     .WithProgram(new CompositeProxyArrayBacked())
     .WithProgram(new DynamicProxy())
     .WithProgram(new ViewModel())
+    .WithProgram(new BitFragging())
     .WithProgram(new ProxyExercise())
     .Build();
 
