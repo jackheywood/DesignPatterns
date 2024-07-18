@@ -14,6 +14,7 @@
   * [Flyweight](#flyweight)
   * [Proxy](#proxy)
 * [Behavioural Patterns](#behavioural-patterns)
+  * [Chain of Responsibility](#chain-of-responsibility)
 
 ## Creational Patterns
 
@@ -332,3 +333,29 @@ between objects
 
 - All different; no central theme
 - Unique in their approach to solving specific problems
+
+### Chain of Responsibility
+
+**Chain of Responsibility** lets you pass requests along a chain of handlers. Upon 
+receiving a request, each handler decides either to process the request or to pass
+it to the next handler in the chain.
+
+#### Motivation
+
+- Unethical behaviour by an employee; who takes the blame?
+  - Employee
+  - Manager
+  - CEO
+- You click a graphical element on a form; who handles the event?
+  - Button
+  - Underlying group box
+  - Underlying window
+- CCG computer game
+  - Creature has attack and defense values
+  - Those can be boosted by other cards
+
+#### Summary
+
+- **Chain of Responsibility** is a chain of components who all get a chance to
+  process a command or a query, optionally having default processing implementation
+  and an ability to terminate the processing chain.
